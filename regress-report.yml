@@ -11,7 +11,7 @@ bugreports:
     Google Chrome   107.0.5304.121 (Официальная сборка) (64 бит)
     ОС Linux 22.04
   steps-to-reproduce: |
-    1. Зайти на страницу https://hexlet-products-store.vercel.app/
+    1. Зайти на страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
     2. С помощью DevTools проверить адаптивность на различных устройствах
   expected-result: |
     Верстка адаптивна, все элементы отображаются корректно
@@ -38,12 +38,32 @@ bugreports:
     Google Chrome 107.0.5304.121 (Официальная сборка) (64 бит)
     ОС Linux
   steps-to-reproduce: |
-    1. Зайти на страницу https://hexlet-products-store.vercel.app/
+    1. Зайти на страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
     2. Найти форму регистрации
   expected-result: |
     Отсутсвует форма регистрации 
   actual-result: |
     Нет возможности зарегистрировать нового пользователя
+
+test-cases:
+  - summary: |
+      Проверка входа пользователя с несуществующими логином и паролем
+      status: fail
+
+bugreports:
+  - summary: |
+    Проверка входа пользователя с несуществующими логином и паролем
+  requirement: |
+    Возможность входа авторизованного пользователя
+  prerequisites: |
+    Открыта страница https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+    steps:
+    - Найти форму входа
+    - Ввести логин и пароль
+    - Осуществить вход
+  expected-result: |
+    Отсутствует форма авторизации
+  
 
 test-cases:
   - summary: |
@@ -62,12 +82,7 @@ bugreports:
   expected-result: |
     Невозможно изменть количество товара через корзину
     Ошибка изображена на скриншоте assets/2.png
-    
-test-cases:
-  - summary: |
-      Проверка возможности изменения количества товара в корзине
-      status: fail
-
+  
 
     
 
