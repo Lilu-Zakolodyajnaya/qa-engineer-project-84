@@ -8,8 +8,8 @@ bugreports:
   - summary: |
     Верстка неадаптивна и некорректно отображается на мобильных устройствах
   environment: |
-    Google Chrome   107.0.5304.121 (Официальная сборка) (64 бит)
-    ОС Linux 22.04
+    Google Chrome   Версия 128.0.6613.138 (Официальная сборка), (64 бит)
+    Windows 10 Pro 19045.4894
   steps-to-reproduce: |
     1. Зайти на страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
     2. С помощью DevTools проверить адаптивность на различных устройствах
@@ -35,13 +35,13 @@ bugreports:
   - summary: |
     Невозможно зарегистрировать нового пользователя
   environment: |
-    Google Chrome 107.0.5304.121 (Официальная сборка) (64 бит)
-    ОС Linux
+    Google Chrome   Версия 128.0.6613.138 (Официальная сборка), (64 бит)
+    Windows 10 Pro 19045.4894
   steps-to-reproduce: |
     1. Зайти на страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
     2. Найти форму регистрации
   expected-result: |
-    Отсутсвует форма регистрации 
+    Регистрация нового пользователя
   actual-result: |
     Нет возможности зарегистрировать нового пользователя
 
@@ -53,17 +53,17 @@ test-cases:
 bugreports:
   - summary: |
     Проверка входа пользователя с несуществующими логином и паролем
-  requirement: |
-    Возможность входа авторизованного пользователя
-  prerequisites: |
-    Открыта страница https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-    steps:
-    - Найти форму входа
-    - Ввести логин и пароль
-    - Осуществить вход
+  environment: |
+    Google Chrome   Версия 128.0.6613.138 (Официальная сборка), (64 бит)
+    Windows 10 Pro 19045.4894
+  steps-to-reproduce: |
+    1. Зайти на страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+    2. Найти форму регистрации
+    3. Ввести логин и пароль
   expected-result: |
-    Отсутствует форма авторизации
-  
+    Невозможно авторизоваться с несуществующими логином и паролем
+  actual-result: |
+    Нет возможности асторизоваться
 
 test-cases:
   - summary: |
@@ -72,16 +72,17 @@ test-cases:
 
 bugreports:
   - summary: |
-    Проверка возможности указания количества товара в корзине
-  requirement: |
-    При заказе товара пользователь имеет возможность изменить количесво товара в корзине
-  prerequisites: |
-    Открыта страница корзины
-    steps:
-    - В выбранном товаре меняем количество
-  expected-result: |
-    Невозможно изменть количество товара через корзину
-    Ошибка изображена на скриншоте assets/2.png
+    Проверка возможности изменения количества товара в корзине
+environment: |
+    Google Chrome   Версия 128.0.6613.138 (Официальная сборка), (64 бит)
+    Windows 10 Pro 19045.4894
+steps-to-reproduce: |
+    1. Открыта корзина
+    2. В определенном товаре меняем количество
+expected-result: |
+    Изменение количества товара
+actual-result: |
+    Нет возможности изменить количество товара
   
 
     
