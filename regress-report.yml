@@ -62,7 +62,7 @@ test-cases:
 
 - summary: |
     Проверка возможности ввода в поле цены других символов, кроме цифр
-   status: fail
+  status: fail
 
 bugreports:
   - summary: |
