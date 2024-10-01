@@ -1,6 +1,6 @@
 ---
 test-cases:
-  - summary: |
+- summary: |
      Проверка работы сайта в мобильной версии
   status: fail
   
