@@ -79,7 +79,6 @@ bugreports:
       Отображается список товаров
       Ошибка изображена на скриншоте assets/10.png
 
-bugreports:
   - summary: |
       Не происходит поиск товара 
     environment: |
