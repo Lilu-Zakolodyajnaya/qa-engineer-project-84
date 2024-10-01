@@ -66,66 +66,66 @@ test-cases:
 
 bugreports:
   - summary: |
-    Происходит выбор товара с несуществующей ценой
-  environment: |
-    Google Chrome   Версия 128.0.6613.138 (Официальная сборка), (64 бит)
-    Windows 10 Pro 19045.4894
-  steps-to-reproduce: |
-    1. Зайти на страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-    2. Установить в поле цены стоимость ноль или отрицательную
-  expected-result: |
-    Товары отсутствуют, появляется сообщение "Ничего не найдено"
-  actual-result: |
-    Отображается список товаров
-    Ошибка изображена на скриншоте assets/10.png
+      Происходит выбор товара с несуществующей ценой
+    environment: |
+      Google Chrome   Версия 128.0.6613.138 (Официальная сборка), (64 бит)
+      Windows 10 Pro 19045.4894
+    steps-to-reproduce: |
+      1. Зайти на страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      2. Установить в поле цены стоимость ноль или отрицательную
+    expected-result: |
+      Товары отсутствуют, появляется сообщение "Ничего не найдено"
+    actual-result: |
+      Отображается список товаров
+      Ошибка изображена на скриншоте assets/10.png
 
 bugreports:
   - summary: |
-    Не происходит поиск товара 
-  environment: |
-    Google Chrome   Версия 128.0.6613.138 (Официальная сборка), (64 бит)
-    Windows 10 Pro 19045.4894
-  steps-to-reproduce: |
-    1. Зайти на страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-    2. Ввести в поле Поиск символы =+*
-    3. Нажать Enter
-  expected-result: |
-    Товары отсутствуют, появляется сообщение "Ничего не найдено"
-  actual-result: |
-    Отображается список товаров
-    Ошибка изображена на скриншоте assets/9.png
+      Не происходит поиск товара 
+    environment: |
+      Google Chrome   Версия 128.0.6613.138 (Официальная сборка), (64 бит)
+      Windows 10 Pro 19045.4894
+    steps-to-reproduce: |
+      1. Зайти на страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      2. Ввести в поле Поиск символы =+*
+      3. Нажать Enter
+    expected-result: |
+      Товары отсутствуют, появляется сообщение "Ничего не найдено"
+    actual-result: |
+      Отображается список товаров
+      Ошибка изображена на скриншоте assets/9.png
 
 bugreports:
   - summary: |
-    В поле цены можно ввести символы, кроме цифр
-  environment: |
-    Google Chrome   Версия 128.0.6613.138 (Официальная сборка), (64 бит)
-    Windows 10 Pro 19045.4894
-  steps-to-reproduce: |
-    1. Зайти на страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-    2. В поле цена "От" вводим знак "+"
-    3. В поле цена "До" вводим знак "+"
-  expected-result: |
-    Невозможно ввести символы, кроме цифр
-  actual-result: |
-    Символы можно ввести
-    Ошибка изображена на скриншоте assets/8.png
+      В поле цены можно ввести символы, кроме цифр
+    environment: |
+      Google Chrome   Версия 128.0.6613.138 (Официальная сборка), (64 бит)
+      Windows 10 Pro 19045.4894
+    steps-to-reproduce: |
+      1. Зайти на страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      2. В поле цена "От" вводим знак "+"
+      3. В поле цена "До" вводим знак "+"
+    expected-result: |
+      Невозможно ввести символы, кроме цифр
+    actual-result: |
+      Символы можно ввести
+      Ошибка изображена на скриншоте assets/8.png
 
 bugreports:
   - summary: |
-    Невозможен поиск товара по ключевому слову
-  environment: |
-    Google Chrome   Версия 128.0.6613.138 (Официальная сборка), (64 бит)
-    Windows 10 Pro 19045.4894
-  steps-to-reproduce: |
-    1. Зайти на страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-    2. В окне "Поиск" вводим ключевое слово
-    3. Нажать Enter
-  expected-result: |
-    Производится отбор товаров, содержащих ключевое слово
-  actual-result: |
-    Поиск товара не происходит
-    Ошибка изображена на скриншоте assets/7.png
+      Невозможен поиск товара по ключевому слову
+    environment: |
+      Google Chrome   Версия 128.0.6613.138 (Официальная сборка), (64 бит)
+      Windows 10 Pro 19045.4894
+    steps-to-reproduce: |
+      1. Зайти на страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      2. В окне "Поиск" вводим ключевое слово
+      3. Нажать Enter
+    expected-result: |
+      Производится отбор товаров, содержащих ключевое слово
+    actual-result: |
+      Поиск товара не происходит
+      Ошибка изображена на скриншоте assets/7.png
 
   
 
