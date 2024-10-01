@@ -79,7 +79,6 @@ bugreports:
       Отображается список товаров
       Ошибка изображена на скриншоте assets/10.png
 
-bugreports:
   - summary: |
       Не происходит поиск товара 
     environment: |
@@ -95,7 +94,6 @@ bugreports:
       Отображается список товаров
       Ошибка изображена на скриншоте assets/9.png
 
-bugreports:
   - summary: |
       В поле цены можно ввести символы, кроме цифр
     environment: |
@@ -111,7 +109,6 @@ bugreports:
       Символы можно ввести
       Ошибка изображена на скриншоте assets/8.png
 
-bugreports:
   - summary: |
       Невозможен поиск товара по ключевому слову
     environment: |
